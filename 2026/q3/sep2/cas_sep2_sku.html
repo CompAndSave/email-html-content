@@ -30,6 +30,7 @@
 		a{ text-decoration: none; }
 	</style>
 	<![endif]-->
+	*|IF:INK1SKU|*
 	<script type="application/ld+json">
 [
     {
@@ -37,21 +38,26 @@
         "@type": "PromotionCard",
         "image": "https://assets.compandsave.com/stock-photo/cartridges/*|UPPER:INK1SKU|*.JPG",
         "url": "https://www.compandsave.com/deals/skuCampaign?sku=*|INK1SKU|*&encemail=*|ENCEMAIL|*&utm_content=ink1_pimg&coupon=EOS15"
-    },
+    }
+*|IF:INK2SKU|*,
     {
         "@context": "http://schema.org/",
         "@type": "PromotionCard",
         "image": "https://assets.compandsave.com/stock-photo/cartridges/*|UPPER:INK2SKU|*.JPG",
         "url": "https://www.compandsave.com/deals/skuCampaign?sku=*|INK2SKU|*&encemail=*|ENCEMAIL|*&utm_content=ink2_pimg&coupon=EOS15"
-    },
+    }
+*|END:IF|*
+*|IF:INK3SKU|*,
     {
         "@context": "http://schema.org/",
         "@type": "PromotionCard",
         "image": "https://assets.compandsave.com/stock-photo/cartridges/*|UPPER:INK3SKU|*.JPG",
         "url": "https://www.compandsave.com/deals/skuCampaign?sku=*|INK3SKU|*&encemail=*|ENCEMAIL|*&utm_content=ink3_pimg&coupon=EOS15"
     }
+*|END:IF|*
 ]
 </script>
+	*|END:IF|*
 </head>
 <body class="body" style="color:#525666;font-family:Mulish,Arial,Verdana,sans-serif;font-size:17px;line-height:initial;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;background-color:#e7f7fe;width:100%!important;height:100%!important;margin:0!important;padding:0!important">
 	<div role="article" aria-roledescription="email" aria-label="Promo email from Compandsave.com" xml:lang="en" lang="en">
